@@ -664,7 +664,8 @@ public class BPlayer {
 			duration *= 4;
 		}
 		List<PotionEffect> l = new ArrayList<>(1);
-		l.add(PotionEffectType.CONFUSION.createEffect(duration, 0));
+		// remove 1.21
+		// l.add(PotionEffectType.CONFUSION.createEffect(duration, 0));
 
 		PlayerEffectEvent event = new PlayerEffectEvent(player, PlayerEffectEvent.EffectType.ALCOHOL, l);
 		P.p.getServer().getPluginManager().callEvent(event);
@@ -756,7 +757,7 @@ public class BPlayer {
 		int amplifier = getHangoverQuality() / 3;
 
 		List<PotionEffect> list = new ArrayList<>(2);
-		list.add(PotionEffectType.SLOW.createEffect(duration, amplifier));
+		list.add(PotionEffectType.SLOWNESS.createEffect(duration, amplifier));
 		list.add(PotionEffectType.HUNGER.createEffect(duration, amplifier));
 
 		PlayerEffectEvent event = new PlayerEffectEvent(player, PlayerEffectEvent.EffectType.HANGOVER, list);

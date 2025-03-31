@@ -1117,7 +1117,8 @@ public class Brew implements Cloneable {
 		PotionMeta potionMeta = ((PotionMeta) item.getItemMeta());
 		assert potionMeta != null;
 
-		potionMeta.setBasePotionData(new PotionData(PotionType.UNCRAFTABLE));
+		// old: new PotionData(PotionType.UNCRAFTABLE)
+		// potionMeta.setBasePotionData(new PotionData(PotionType.UNCRAFTABLE));
 		BrewLore lore = new BrewLore(this, potionMeta);
 		lore.removeEffects();
 

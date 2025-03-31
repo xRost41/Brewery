@@ -209,7 +209,7 @@ public class BData {
 			Material m = Material.getMaterial(matSplit[0]);
 			if (m == null && P.use1_13) {
 				if (matSplit[0].equals("LONG_GRASS")) {
-					m = Material.GRASS;
+					m = Material.SHORT_GRASS;
 				} else {
 					m = Material.matchMaterial(matSplit[0], true);
 				}

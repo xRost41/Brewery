@@ -116,12 +116,13 @@ public class InventoryListener implements Listener {
 					}
 				} else {
 					// convert potions from 1.8 to 1.9 for color and to remove effect descriptions
-					if (P.use1_9 && !potion.hasItemFlag(ItemFlag.HIDE_POTION_EFFECTS)) {
+					/*if (P.use1_9 && !potion.hasItemFlag(ItemFlag.HIDE_POTION_EFFECTS)) {
 						Brew brew = Brew.get(potion);
 						if (brew != null) {
 							brew.convertPre1_9(item);
 						}
 					}
+					 */
 				}
 				/*Brew brew = Brew.get(item);
 				if (brew != null) {
