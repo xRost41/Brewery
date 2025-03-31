@@ -127,11 +127,11 @@
 			<id>chestshop-repo</id>
 			<url>https://repo.minebench.de/</url>
 		</repository>
-        <repository>
-            <!-- BlockLocker -->
-            <id>CodeMC</id>
-            <url>https://repo.codemc.org/repository/maven-public/</url>
-        </repository>
+		<repository>
+			<!-- BlockLocker -->
+			<id>CodeMC</id>
+			<url>https://repo.codemc.org/repository/maven-public/</url>
+		</repository>
 		<repository>
 			<!-- MythicLib (MMOItems) -->
 			<id>phoenix</id>
@@ -141,6 +141,11 @@
 			<!-- Shopkeepers -->
 			<id>Lichtspiele</id>
 			<url>https://nexus.lichtspiele.org/repository/releases/</url>
+		</repository>
+
+		<repository>
+			<id>glaremasters repo</id>
+			<url>https://repo.glaremasters.me/repository/towny/</url>
 		</repository>
 
 	</repositories>
@@ -283,7 +288,7 @@
 			<groupId>io.lumine</groupId>
 			<artifactId>MythicLib-dist</artifactId>
 			<version>1.6-SNAPSHOT</version>
-			<scope>provided</scope>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<!-- https://github.com/ChestShop-authors/ChestShop-3/releases -->
@@ -294,17 +299,16 @@
 		</dependency>
 		<dependency>
 			<!-- https://www.spigotmc.org/resources/towny-advanced.72694/history -->
-			<groupId>com.github.TownyAdvanced</groupId>
-			<artifactId>Towny</artifactId>
-			<version>0.100.0.0</version>
-			<scope>provided</scope>
+			<groupId>com.palmergames.bukkit.towny</groupId>
+			<artifactId>towny</artifactId>
+			<version>0.101.1.0</version>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<!-- https://www.spigotmc.org/resources/shopkeepers.80756/history -->
 			<groupId>com.nisovin.shopkeepers</groupId>
 			<artifactId>ShopkeepersAPI</artifactId>
-			<version>2.18.0</version>
-			<scope>provided</scope>
+			<version>2.16.0</version>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<!-- https://www.spigotmc.org/resources/blocklocker.3268/history -->
