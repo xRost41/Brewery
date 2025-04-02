@@ -254,7 +254,7 @@ public class BCauldron {
 			// Colorable spirally spell, 0 count enables color instead of the offset variables
 			// Configurable RGB color. The last parameter seems to control the hue and motion, but i couldn't find
 			// how exactly in the client code. 1025 seems to be the best for color brightness and upwards motion
-			block.getWorld().spawnParticle(Particle.DUST, getRandParticleLoc(), 0,
+			block.getWorld().spawnParticle(Particle.DUST_PILLAR, getRandParticleLoc(), 0,
 				((double) color.getRed()) / 255.0,
 				((double) color.getGreen()) / 255.0,
 				((double) color.getBlue()) / 255.0,
